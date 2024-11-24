@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcule o seu IMC</title>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <section class="conteiner">
+
+        
+        <div class="imc">
+            <h1>Tabela IMC</h1>
+        
+            <h3>IMC</h2>
+            <p>Menor do que 18,5</p>
+            <p>Entre 18,5 e 24,9</p>
+            <p>Entre 25 e 29,9</p>
+            <p>Entre 30 e 34,9</p>
+            <p>Entre 35 e 39,9</p>
+            <p>Maior do que 40</p>
+        </div>
+
+        <div class="result">
+            <h3>Resultado</h2>
+            <p>Abaixo do peso</p>
+            <p>Peso normal</p>
+            <p>Sobrepeso</p>
+            <p>Obesidade grau 1</p>
+            <p>Obesidade grau 2</p>
+            <p>Obesidade grau 3</p>
+        </div>
+
+        <div class="form">
+
+        <h1>Calcule seu IMC</h1>
+        
+        <form action="/" id="formulario" method="POST">
+          <label for="peso">Peso</label>  
+          <input type="text" id="peso" name="peso">
+
+          <label for="altura">Altura</label>  
+          <input type="text" id="altura" name="altura">
+
+          <button type="submit">Enviar</button>
+        </form>
+
+        <div id="resultado"></div>
+
+    </div>
+
+    </section>
+    
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

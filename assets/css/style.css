@@ -1,0 +1,97 @@
+:root{
+   --primary-color: rgb(13, 106, 134);
+   --primary-color-darker: rgb(9, 48, 56);
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--primary-color);
+    font-family: 'Open sans', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.conteiner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 640px;
+    margin: 50px auto; /* 50px (cima e baixo) auto (laterais) */
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form input, form label, form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form input {
+    font-size: 24px;
+    height: 50px;
+    padding: 0 20px;
+}
+
+form input:focus {
+    outline: 1px solid var(--primary-color);
+}
+
+form button {
+    border: none;
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+form button:hover {
+    background: var(--primary-color-darker);
+}
+
+.imc{
+    display: flex;
+    line-height: 0;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.result{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    line-height: 0;
+    justify-content: center;
+    margin-left: 200px;
+    margin-top: 50px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-left: 100px;
+}
+
+/* classe BAD está junto com "paragrafo-resultado" pois terá o mesmo PADDING. Depois, ela foi chamada sozinha e adicionada sua prórpia cor */
+.paragrafo-resultado, .bad {
+    background: rgb(109, 255, 182);
+    padding: 10px 20px;
+}
+
+.bad {
+    background: rgb(255, 150, 150);
+}
+
